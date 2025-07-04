@@ -2,7 +2,7 @@
   "name": "Hailee's Perfect Food Picker",
   "short_name": "Food Picker",
   "description": "Your personal food picker app that helps you find the perfect meal every time",
-  "start_url": "/hailee-food-app.html",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#F3F4F6",
   "theme_color": "#8B5CF6",
