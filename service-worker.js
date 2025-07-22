@@ -1,6 +1,5 @@
-const CACHE_NAME = 'hailee-food-picker-v1';
+const CACHE_NAME = 'durango-food-picker-v1';
 const urlsToCache = [
-  './hailee-food-app.html',
   './manifest.json',
   './index.html',
   'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
