@@ -1,61 +1,23 @@
 # Durango Food Picker
 
-A progressive web app that helps you discover the perfect restaurants in Durango, Colorado based on your mood, cuisine preferences, and budget.
+A small personal web app that suggests where to eat in Durango, Colorado. You pick a mood, a cuisine, and a budget, and it ranks a hand-made list of 42 local restaurants by how well they match.
 
-## Features
+Plain HTML, CSS, and JavaScript in one `index.html`, plus a web app manifest and a service worker so it can be installed on a phone and opened offline. Hosted with GitHub Pages.
 
-- **Smart Recommendations**: Get personalized restaurant suggestions based on your current mood and preferences
-- **Comprehensive Database**: Extensive list of Durango restaurants with ratings and detailed information
-- **Budget-Friendly Options**: Filter by price range to match your budget
-- **Mobile Optimized**: Responsive design that works perfectly on all devices
-- **Progressive Web App**: Install on your device for a native app experience
+## How it works
 
-## How It Works
+1. Pick a mood (Comfort, Healthy, Indulgent, Adventure), a cuisine (Mexican, American, Italian, Asian, Fast Food, or Surprise), and a budget (cheap, moderate, splurge).
+2. Each restaurant gets a score: +50 for a mood match, +35 for a cuisine match (+15 for Surprise), +15 for a budget match, plus a small bonus from its ratings.
+3. Results are shown in score order.
 
-1. **Choose Your Mood**: Select whether you want comfort food, something healthy, indulgent, or adventurous
-2. **Pick Cuisine Type**: Choose from Mexican, American, Italian, Asian, Fast Food, or surprise options
-3. **Set Your Budget**: Select budget-friendly, moderate, or splurge options
-4. **Get Recommendations**: Receive top-rated restaurants ranked by how well they match your preferences
+The ratings (health, "gains", and cheapness, each 1–10) and the short notes on each restaurant are my own opinions, not official inspection grades or reviews.
 
-## Technologies Used
+## Run locally
 
-- HTML5
-- CSS3 (with modern features like CSS Grid and Flexbox)
-- Vanilla JavaScript
-- Progressive Web App (PWA) capabilities
-- Service Worker for offline functionality
-
-## Installation
-
-### As a Web App
-Simply visit the live site and the app will be available in your browser.
-
-### As a PWA
-1. Visit the site on your mobile device
-2. Look for the "Add to Home Screen" prompt
-3. Install for native app experience
-
-## Development
-
-To run locally:
-1. Clone the repository
-2. Open `index.html` in your browser
-3. For local development server: `python -m http.server 8000`
-
-## Restaurant Data
-
-The app includes detailed information about local Durango restaurants including:
-- Health ratings (1-10)
-- Value ratings (1-10) 
-- Budget categories ($ - $$$)
-- Signature dishes
-- Cuisine types
-- Mood matching
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+```bash
+python -m http.server 8000   # then open http://localhost:8000
+```
 
 ## License
 
-This project is open source and available under the MIT License.
+[MIT](LICENSE)
